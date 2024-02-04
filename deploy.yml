@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-cont
-        image: us-central1-docker.pkg.dev/civic-rhythm-404204/flask-dev/flaskv1:latest
+        image: us-central1-docker.pkg.dev/civic-rhythm-404204/flask-cicd/flaskdemo:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 5000

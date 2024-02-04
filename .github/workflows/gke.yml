@@ -9,10 +9,10 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: autopilot-cluster-1    # cluster name
   GKE_ZONE: us-central1  # cluster zone
-  IMAGE: flaskv1 # image name
-  IMAGE_TAG: latest # image tag
+  IMAGE: flaskdemo  # image name
+  IMAGE_TAG: v1 # image tag
   GAR_ZONE: us-central1 # artifact registry zone
-  GAR_REPO: flask-dev # artifact registry repository
+  GAR_REPO: flask-cicd # artifact registry repository
 
 jobs:
   setup-build-publish-deploy:
