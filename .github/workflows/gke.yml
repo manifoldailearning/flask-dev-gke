@@ -59,6 +59,5 @@ jobs:
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
       run: |-
-        kubectl delete deployment flask-gke
         kubectl apply -f deploy.yml
         kubectl get pods
